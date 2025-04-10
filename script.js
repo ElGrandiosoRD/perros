@@ -60,7 +60,7 @@ async function getDogImage() {
           });
           function myFunction(x) {
             if (x.matches) { 
-                ga.style.marginTop = "3800px";
+                ga.style.marginTop = "3200px";
             } else {
                 ga.style.marginTop = "600px";
             }
