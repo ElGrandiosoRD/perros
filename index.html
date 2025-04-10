@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERRITOS</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li style="background-color: #28b4c6;"><a href="#" onclick="showSection('inicio')"><img src="images/logo.svg" height="50px" width="50px"></a></li>
+                <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('Galer'), getDogImage2()">Galería de imagenes</a></li>
+                <!--<li><a href="#" onclick="showSection('tres'), getDogImage3()">Tres</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="section-content" style="width: 100%;" >
+        <h1 style="color: #ecf7ff;">Es un lindo Perrito</h1>
+        <div class="marco">
+            <img id="dogImage" src="" alt="Imagen de perro aleatorio"/>
+        </div>
+        
+        <p><button onclick="getDogImage()">Ver otro perrito</button></p>
+        
+    </section>
+
+    <section id="Galer" class="section-content" style="width: 100%; ">
+       
+        <div>
+            <h1 style="margin: 30px; color: #ecf7ff;">🐶 Galería de Perros Aleatorios</h1>
+            <div id="loader" class="loader hidden"></div>
+      
+            <div class="galeria2" id="galeria2">
+              <!-- Imágenes se insertan aquí -->
+            </div>
+         </div>
+      
+        <button class="boton" onclick="cargarImagenes()">🔁 Cargar Nuevas Imágenes</button>
+        
+    </section>
+<!--
+    <section id="tres" class="section-content" style="width: 100%;">
+        <h1>TRES</h1>
+        <img id="dogImage3" src="" alt="Imagen de perro aleatorio" />
+        <p><button onclick="getDogImage3()">Ver otro perrito</button></p>
+    </section>
+-->
+<footer>
+    <p> Grupo 9.</p>
+    <p>Escarlet Montero 100673114<br>
+        Esthefani Liberato 100593217<br> 
+        Camilo Reynoso Adames 100549093<br>
+        &copy; Todos los derechos reservados.
+        </p>
+</footer>
+
+</body>
+
+</html>
